@@ -30,7 +30,7 @@ if(isset($_GET['p'])){
     $page = $_GET['p'];
 
     switch ($page) {
-        case 'kategoriadd':
+        case 'kriteriaadd':
             include "kriteriaadd.php";
             break;
         case 'kriteriaedit':
