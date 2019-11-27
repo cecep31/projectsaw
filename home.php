@@ -28,8 +28,8 @@ while($rm = mysqli_fetch_array($sqlm)){
 	  benifit/cost : <b>$rm[jc]</b>
 	</td>
     <td>
-	  <a href='?p=cedit&id=$rm[idc]'>Ubah</a> |
-	  <a href='?p=cdel&id=$rm[idc]'>Hapus</a>
+	  <a href='?p=cedit&idc=$rm[idc]'>Ubah</a> |
+	  <a href='?p=cdel&idc=$rm[idc]'>Hapus</a>
 	</td>
   </tr>";
   $no++;

@@ -16,7 +16,7 @@
             	
 			<tr>
 				<td></td>
-				<td><input type="submit" name="simpan" id="simpan" value="tambah" /></td>					
+				<td align="center"><input type="submit" name="simpan" id="simpan" value="tambah" /></td>					
 			</tr>				
 		</table>
     </form>
