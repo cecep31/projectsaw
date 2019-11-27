@@ -35,4 +35,6 @@ while($rm = mysqli_fetch_array($sqlm)){
   $no++;
 }  
 echo "</table>";
+
+$rm[jc]
 ?>

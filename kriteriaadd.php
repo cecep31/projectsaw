@@ -26,9 +26,9 @@
   if($sqladd){
     echo "Data Berhasil Disimpan";
   }else{
-    echo "";
+    echo "gagal";
   }
-  echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=mhs'>";
+  echo "<META HTTP-EQUIV='Refresh' Content='1; URL='>";
 }
 
 ?>  

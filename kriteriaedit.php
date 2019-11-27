@@ -8,7 +8,7 @@
 		<table>
 			<tr>
                 <td width="120">Nama kriteria</td>
-                <input name="idmhs" type="hidden" id="idmhs" value="<?php echo "$rm[idc]"; ?>" />
+                <input name="idc" type="hidden" id="idc" value="<?php echo "$rm[idc]"; ?>" >
 				<td width="146"><input type="text" name="namac" id="namac" value="<?php echo "$rm[namac]"; ?>"></td>					
 			</tr>	
 			<tr>
@@ -22,19 +22,19 @@
             	
 			<tr>
 				<td></td>
-				<td align="center"><input type="submit" name="simpan" id="simpan" value="tambah" /></td>					
+				<td align="center"><input type="submit" name="edit" id="edit" value="ubah" /></td>					
 			</tr>				
 		</table>
     </form>
 <?php
-    if( isset($_POST["simpan"])){
-  $sqladd = mysqli_query($kon, "insert into tbl_cadd (namac, bobotc, jc) values ('$_POST[namac]', '$_POST[bobotc]', '$_POST[jc]')"); 
-  if($sqladd){
+    if( isset($_POST["edit"])){
+  $sqledit = mysqli_query($kon, "update tbl_cadd set namac='$_POST[namac]', bobotc='$_POST[bobotc]', jc='$_POST[jc]' where idc='$_POST[idc]'"); 
+  if($sqledit){
     echo "Data Berhasil Disimpan";
   }else{
-    echo "";
+    echo "gagal";
   }
-  echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=mhs'>";
+  echo "<META HTTP-EQUIV='Refresh' Content='1; URL=/projectsaw'>";
 }
 
 ?>  
