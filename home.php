@@ -35,6 +35,24 @@ while($rm = mysqli_fetch_array($sqlm)){
   $no++;
 }  
 echo "</table>";
+echo "<br>";
+$sql=mysqli_query($kon, "SELECT SUM(bobotc) AS Total FROM tbl_cadd");
+// if($sql){
+//     echo "Terkoneksi dengan MySQL Server <br>";
+//     echo "Database $db bisa diakses";
+//   }else{
+//     echo "Koneksi Gagal Bro..";
+//   }
 
-$rm[jc]
+//Looping Untuk menampilkan data (namabarang,jumlah,harga)
+
+while($rkl = mysqli_fetch_array($sql)){
+	echo "<big>total: $rkl[Total]</big>
+	<br> <h3>pastikan total hasilnya 1</h3>";
+	
+	
+}	
+
+
+
 ?>
