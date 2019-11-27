@@ -35,7 +35,10 @@ if(isset($_GET['p'])){
             break;
         case 'cedit':
             include "kriteriaedit.php";
-            break;    
+            break;
+        case 'alternatifadd':
+            include "alternatifadd.php";
+            break;         
         case 'kriteriaedit':
             include "kriteriaedit.php";
             break;			
