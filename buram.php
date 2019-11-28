@@ -17,7 +17,7 @@ while($rm = mysqli_fetch_row($sqlm)){
 	  category : <b>$rm[1]</b>
 	</td>
     <td>
-	  
+          
 	</td>
    
     
