@@ -1,12 +1,12 @@
 <?php
+include "koneksi.php";
 echo "
 <br>
-<h3>tambah alternatif</h3>
-<form action='' method=post'>";
+<h2 class='h3k'>KRITERIA</h2>";
 echo "<table>
   <tr>
-	<td><b>nama alternatif :<b></td>
-    <td width='146'><input type='text' name='namaa' id='namaa'></td>
+	<td>nama alternatif</td>
+    <td width='146'><input type='text' name='namac' id='namac'></td>
   </tr>";
 
 $sqlm = mysqli_query($kon, "select * from tbl_cadd");
@@ -14,20 +14,17 @@ $no = 1;
 while($rm = mysqli_fetch_row($sqlm)){
   echo "<tr>
     <td>
-	   <b>$rm[1] :</b>
+	  category : <b>$rm[1]</b>
 	</td>
     <td>
-	<input type='text' name='namac' id='namac'>
+	  
 	</td>
    
     
   </tr>";
   $no++;
 }  
-echo "</table>
-</form>
-";
-
+echo "</table>";
 echo "<br>";
 $sql=mysqli_query($kon, "SELECT SUM(bobotc) AS Total FROM tbl_cadd");
 // if($sql){
@@ -39,6 +36,14 @@ $sql=mysqli_query($kon, "SELECT SUM(bobotc) AS Total FROM tbl_cadd");
 
 //Looping Untuk menampilkan data (namabarang,jumlah,harga)
 
+echo "<div class='total'>";
+while($rkl = mysqli_fetch_array($sql)){
+	echo "<big>total: $rkl[Total]</big>
+	<br> <h3>pastikan total hasilnya 1</h3>";
+	
+	
+}	
+echo "</div>";
 
 
 ?>
