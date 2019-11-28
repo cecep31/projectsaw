@@ -10,19 +10,19 @@ echo "<table>
   </tr>";
 
 $sqlm = mysqli_query($kon, "select * from tbl_cadd");
-$no = 1;
+$na = 1;
 while($rm = mysqli_fetch_row($sqlm)){
   echo "<tr>
     <td>
 	   <b>$rm[1] :</b>
 	</td>
     <td>
-	<input type='text' name='namac' id='namac'>
+	<input type='text' name='isi$na' id='isi$na'>
 	</td>
    
     
   </tr>";
-  $no++;
+  $na++;
 }  
 echo "</table>
 </form>
