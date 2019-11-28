@@ -1,10 +1,10 @@
 <br>
-<h3>tambah kriteria baru</h3><br>
+<h3>tambah alternatif baru</h3><br>
 	<form action="" method="post">		
 		<table>
 			<tr>
-				<td width="120">Nama kriteria</td>
-				<td width="146"><input type="text" name="namac" id="namac"></td>					
+				<td width="120">Nama alternatif</td>
+				<td width="146"><input type="text" name="namaa" id="namaa"></td>					
 			</tr>	
 			<tr>
 				<td>bobot</td>

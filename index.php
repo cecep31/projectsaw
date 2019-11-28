@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>metode SAW</title>
-    <link rel="stylesheet" type="text/css" href="gaya.css" />
+    <title>Metode SAW</title>
+    <link rel="stylesheet" type="text/css" href="manatap.css" />
 </head>
 <body>
 <nav>
     <ul>
         <li><a href="/projectsaw">Home</a></li>
-        <li><a href="?p=kriteriaadd">tambah kategori</a></li>
-        <li><a href="?p=alternatifadd">tambah alternatif</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="?p=kriteriaadd">Tambah kriteria</a></li>
+        <li><a href="?p=alternatifadd">Tambah alternatif</a></li>
+        <li><a href="https://github.com/cecep31">Contact Me</a></li>
     </ul>
 </nav>
 
@@ -35,6 +35,9 @@ if(isset($_GET['p'])){
             break;
         case 'cedit':
             include "kriteriaedit.php";
+            break;
+        case 'cdel':
+            include "kriteriadel.php";
             break;
         case 'alternatifadd':
             include "alternatifadd.php";

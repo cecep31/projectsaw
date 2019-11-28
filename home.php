@@ -1,8 +1,8 @@
 <?php
 echo "
 <br>
-<h2 class='h3k'>kriteria</h2>";
-echo "<table width='50%' border='1' cellspacing='2' cellpadding='5'>
+<h2 class='h3k'>KRITERIA</h2>";
+echo "<table class='table1'>
   <tr>
 	<th>no</th>
     <th>nama kriteria</th>
@@ -46,13 +46,14 @@ $sql=mysqli_query($kon, "SELECT SUM(bobotc) AS Total FROM tbl_cadd");
 
 //Looping Untuk menampilkan data (namabarang,jumlah,harga)
 
+echo "<div class='total'>";
 while($rkl = mysqli_fetch_array($sql)){
 	echo "<big>total: $rkl[Total]</big>
 	<br> <h3>pastikan total hasilnya 1</h3>";
 	
 	
 }	
-
+echo "</div>";
 
 
 ?>

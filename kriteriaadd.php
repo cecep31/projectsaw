@@ -29,7 +29,7 @@
   }else{
     echo "gagal";
   }
-  echo "<META HTTP-EQUIV='Refresh' Content='1; URL='>";
+  echo "<META HTTP-EQUIV='Refresh' Content='1; URL=/projectsaw'>";
 }
 
 ?>  
