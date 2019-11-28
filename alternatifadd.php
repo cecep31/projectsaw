@@ -23,7 +23,10 @@ while($rm = mysqli_fetch_row($sqlm)){
     
   </tr>";
   $na++;
+  
 }  
+$arrnya = [$na];
+echo "$arrnya";
 echo "</table>
 </form>
 ";
